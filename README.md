@@ -25,3 +25,21 @@ The example application is Angular 8 CRUD operations – Insert, Update and Dele
 -	Home page (URL: /#/ )
 -	List of employees
 -	Employee form
+
+# Add Firebase Project to Angular App
+Now go to Firebase project overview. then click on web option near to android and ios icon. then copy config object.
+Inside Angular app. past the copied connection details in environments/environment.ts file.
+```
+export const environment = {
+  production: false,
+  firebaseConfig: {
+    apiKey: "",
+    authDomain: "",
+    databaseURL: "",
+    projectId: "",
+    storageBucket: "",
+    messagingSenderId: "",
+    appId: ""
+  }
+};
+```
