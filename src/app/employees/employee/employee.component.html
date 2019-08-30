@@ -1,0 +1,29 @@
+<h4
+[ngClass]=" translateService.currentLang =='en' ? 'text-left': 'text-right'"
+
+>{{'emploeeForm.employee_form' | translate}}</h4>
+<form #form="ngForm" autocomplete="off" (submit)="onSubmit(form)">
+    <input type="hidden" name="id" #id="ngModel" [(ngModel)]="service.formData.id">
+    <div class="form-group">
+        <input name="fullName" #fullName="ngModel" [(ngModel)]="service.formData.fullName" class="form-control"
+            placeholder="{{'emploeeForm.full_name' | translate}}" required>
+        <div *ngIf="fullName.invalid && fullName.touched" class="validation-error">{{'emploeeForm.validation_error' | translate}}</div>
+    </div>
+    <div class="form-group">
+        <input name="position" #position="ngModel" [(ngModel)]="service.formData.position" class="form-control"
+            placeholder="{{'emploeeForm.position' | translate}}">
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <input name="empCode" #empCode="ngModel" [(ngModel)]="service.formData.empCode" class="form-control"
+                placeholder="{{'emploeeForm.emp_code' | translate}}">
+        </div>
+        <div class="form-group  col-md-6">
+            <input name="mobile" #mobile="ngModel" [(ngModel)]="service.formData.mobile" class="form-control"
+                placeholder="{{'emploeeForm.mobile' | translate}}">
+        </div>
+    </div>
+    <div class="form-group">
+        <button type="submit" [disabled]="form.invalid" class="btn btn-lg btn-block btn-info">{{'emploeeForm.btn_submit' | translate}}</button>
+    </div>
+</form>

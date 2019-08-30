@@ -1,0 +1,21 @@
+{
+	"emploeeForm": {
+		"btn_submit": "Submit",
+		"emp_code": "Employee code",
+		"employee_form": "Employee form",
+		"full_name": "Full name",
+		"mobile": "mobile",
+		"position": "position",
+		"validation_error": "This field is required."
+	},
+	"emploeeList": {
+		"Positon": "Position",
+		"action": "Action",
+		"employees_List": "Employees list",
+		"message": "There is no information available!!!",
+		"mobile": "Mobile",
+		"name": "Name",
+		"warning": "Warning"
+	},
+	"title": "A small project that illustrates the CRUD Angular + Firebase"
+}

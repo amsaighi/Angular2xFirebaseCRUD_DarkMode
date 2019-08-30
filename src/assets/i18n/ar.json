@@ -1,0 +1,21 @@
+{
+	"emploeeForm": {
+		"btn_submit": "خضع",
+		"emp_code": "رمز الموظف",
+		"employee_form": "نموذج الموظف",
+		"full_name": "الاسم الكامل",
+		"mobile": "التليفون المحمول",
+		"position": "موضع",
+		"validation_error": "هذه الخانة مطلوبه."
+	},
+	"emploeeList": {
+		"Positon": "موضع",
+		"action": "عمل",
+		"employees_List": "قائمة الموظفين",
+		"message": "لا توجد معلومات متاحة !!!",
+		"mobile": "التليفون المحمول",
+		"name": "اسم",
+		"warning": "تنبيه"
+	},
+	"title": "مشروع صغير يوضح CRUD Angular Firebase"
+}

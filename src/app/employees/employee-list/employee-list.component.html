@@ -1,0 +1,29 @@
+<h4
+[ngClass]=" translateService.currentLang =='en' ? 'text-left': 'text-right'"
+
+>{{'emploeeList.employees_List' | translate}} :</h4>
+<table class="table table-hover">
+  <thead>
+    <th [ngClass]=" translateService.currentLang =='en' ? 'text-left': 'text-right'">{{'emploeeList.name' | translate}}</th>
+    <th [ngClass]=" translateService.currentLang =='en' ? 'text-left': 'text-right'">{{'emploeeList.Positon' | translate}}</th>
+    <th [ngClass]=" translateService.currentLang =='en' ? 'text-left': 'text-right'">{{'emploeeList.mobile' | translate}}</th>
+    <th [ngClass]=" translateService.currentLang =='en' ? 'text-left': 'text-right'">{{'emploeeList.action' | translate}}</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let emp of list">
+      <td [ngClass]=" translateService.currentLang =='en' ? 'text-left': 'text-right'" (click)="onEdit(emp)">{{emp.empCode}} - {{emp.fullName}}</td>
+      <td [ngClass]=" translateService.currentLang =='en' ? 'text-left': 'text-right'" (click)="onEdit(emp)">{{emp.position}}</td>
+      <td [ngClass]=" translateService.currentLang =='en' ? 'text-left': 'text-right'" (click)="onEdit(emp)">{{emp.mobile}}</td>
+      <td><a class="btn text-danger" (click)="onDelete(emp.id)"><i class="fa fa-trash"></i></a></td>
+    </tr>
+    <div *ngIf="!list || list.length === 0">
+      <div class="row justify-content-center">
+        <div class="col-md-12">
+          <div class="alert alert-warning" role="alert">
+            <strong>{{'emploeeList.warning' | translate}}!</strong> {{'emploeeList.message' | translate}}
+          </div>
+        </div>
+      </div>
+    </div>
+  </tbody>
+</table>

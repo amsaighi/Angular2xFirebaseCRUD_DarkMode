@@ -1,0 +1,34 @@
+<div class="container">
+    <br>
+
+    <div class="row justify-content-md-center">
+        <div class="col col-lg-2">
+            <ul class="nav navbar-nav ">
+                <li class="nav-item px-3">
+                    <div class="input-group">
+                        <select id="lang" name="lang" class="form-control form-control-sm" [(ngModel)]="language"
+                            (change)="onChange($event.target.value)">
+                            <option class="text-center" value="ar">عربية</option>
+                            <option class="text-center" value="en">English</option>                            
+                        </select>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="col-md-auto">
+            <div class="alert alert-primary" role="alert">
+                    {{'title' | translate}}
+            </div>
+        </div>
+    </div>
+   
+    <app-employees>
+
+    </app-employees>
+    <div class="footer">
+        <span class="attribution">
+            <a href="https://github.com/amSaighi">amSaighi</a>.
+            &copy; {{ today | date: 'yyyy' }}.
+        </span>
+    </div>
+</div>
