@@ -23,6 +23,7 @@
     "@ngx-translate/core": "^11.0.1",
     "@ngx-translate/http-loader": "^4.0.0",
     "firebase": "^6.4.2",
+    "handlebars": "^4.5.3",
     "ngx-toastr": "^10.1.0",
     "rxjs": "~6.4.0",
     "serialize-javascript": "^2.1.2",
