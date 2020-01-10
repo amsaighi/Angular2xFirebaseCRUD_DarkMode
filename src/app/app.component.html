@@ -1,6 +1,5 @@
 <div class="container">
     <br>
-
     <div class="row justify-content-md-center">
         <div class="col col-lg-2">
             <ul class="nav navbar-nav ">
@@ -9,7 +8,7 @@
                         <select id="lang" name="lang" class="form-control form-control-sm" [(ngModel)]="language"
                             (change)="onChange($event.target.value)">
                             <option class="text-center" value="ar">عربية</option>
-                            <option class="text-center" value="en">English</option>                            
+                            <option class="text-center" value="en">English</option>
                         </select>
                     </div>
                 </li>
@@ -17,18 +16,26 @@
         </div>
         <div class="col-md-auto">
             <div class="alert alert-primary" role="alert">
-                    {{'title' | translate}}
+                {{'title' | translate}}
             </div>
         </div>
+        <div class="col-md-auto">
+
+            <div class="toggle-container">
+                <h6>Light / Dark Mode</h6>
+                <input type="checkbox" id="switch" name="theme" (click)="darkMode()" /><label for="switch"></label>
+            </div>
+        </div>
+
     </div>
-   
+
     <app-employees>
 
     </app-employees>
     <div class="footer">
         <span class="attribution">
-            <a href="https://github.com/amSaighi">amSaighi</a>.
-            &copy; {{ today | date: 'yyyy' }}.
+            <a href="https://github.com/amSaighi">amSaighi</a> &copy; 2019 -
+            {{ today | date: 'yyyy' }}.
         </span>
     </div>
 </div>
