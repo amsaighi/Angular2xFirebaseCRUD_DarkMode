@@ -1,7 +1,7 @@
 <h4
 [ngClass]=" translateService.currentLang =='en' ? 'text-left': 'text-right'"
 
->{{'emploeeForm.employee_form' | translate}}</h4>
+>{{'emploeeForm.employee_form' | translate}}</h4> 
 <form #form="ngForm" autocomplete="off" (submit)="onSubmit(form)">
     <input type="hidden" name="id" #id="ngModel" [(ngModel)]="service.formData.id">
     <div class="form-group">
