@@ -24,7 +24,7 @@
     "@ngx-translate/http-loader": "^4.0.0",
     "acorn": "^7.1.1",
     "firebase": "^6.4.2",
-    "handlebars": "^4.5.3",
+    "handlebars": "^4.7.7",
     "http-proxy": "^1.18.1",
     "https-proxy-agent": "^5.0.0",
     "kind-of": "^6.0.3",
@@ -35,7 +35,9 @@
     "rxjs": "~6.4.0",
     "serialize-javascript": "^3.1.0",
     "tslib": "^1.10.0",
+    "url-parse": "^1.5.1",
     "webpack-subresource-integrity": "^1.5.1",
+    "xmlhttprequest-ssl": "^1.6.2",
     "yargs-parser": "^20.0.0",
     "zone.js": "~0.9.1"
   },
