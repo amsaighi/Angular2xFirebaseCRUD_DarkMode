@@ -28,7 +28,7 @@
     "http-proxy": "^1.18.1",
     "https-proxy-agent": "^5.0.0",
     "kind-of": "^6.0.3",
-    "minimist": "^1.2.5",
+    "minimist": "^1.2.6",
     "ngx-toastr": "^10.1.0",
     "node-fetch": "^2.6.1",
     "node-forge": "^1.0.0",
